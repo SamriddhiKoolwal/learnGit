@@ -1,0 +1,11 @@
+The data, its versions, and all the information associated with each version are stored in a location called repository. 
+There are four repository models commonly employed in Version Control systems. The earlier version of Version Control systems kept repository local – the person making the changes and 
+the repository would be on the same machine . There are also examples of repository located on a shared folder which allows users from within a local area 
+network to collaborate (4).
+ Later on, client/server models became popular where the central repository is located on a server and all clients are able to read and submit changes.
+If the update contains changes that would conflict with the local changes, local copy goes into conflict state. The changes on the local copy needs to be reviewed and should be marked as 
+resolved after complying with the changes of the repository. The changes may be stored in the repository using various models. The simplest model is snapshots, where a complete copy of 
+the data set is stored for each version. For certain data types, this method is still employed – such as in the version control of images, binary media where determination of atomic data 
+unit is not necessarily well defined. For data sets that have a well defined atomic data unit, the most common method is changesets (deltas), where only the modified atomic data units are 
+stored with each version. This, in most cases, provides significant saving in repository storage space. The changeset method, however, comes with the need of data set construction in order 
+to get to a certain version of it. 
